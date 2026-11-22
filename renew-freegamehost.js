@@ -12,7 +12,7 @@
  * 环境变量：
  *   EMAIL            登录邮箱
  *   PASSWORD         登录密码
- *   SERVER_ID        服务器短 ID，默认 d9bae4f7（roxysea）
+ *   SERVER_ID        服务器短 ID，默认 ada07aac（roxysea）
  *   IS_PROXY         "true" 时挂代理
  *   PROXY_SERVER     代理地址，默认 socks5://127.0.0.1:1080
  *   SESSION_COOKIES  可选，已登录会话 cookie（Cookie header 或 Chrome 导出的 JSON），存在时优先复用会话
@@ -26,7 +26,7 @@ const { connect } = require('puppeteer-real-browser');
 
 const EMAIL = process.env.EMAIL || '';
 const PASSWORD = process.env.PASSWORD || '';
-const SERVER_ID = (process.env.SERVER_ID || 'd9bae4f7').trim();
+const SERVER_ID = (process.env.SERVER_ID || 'ada07aac').trim();
 const IS_PROXY = (process.env.IS_PROXY || 'false').toLowerCase() === 'true';
 const PROXY_SERVER = (process.env.PROXY_SERVER || '').trim() || 'socks5://127.0.0.1:1080';
 const SESSION_COOKIES = (process.env.SESSION_COOKIES || '').trim();
